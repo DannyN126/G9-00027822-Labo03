@@ -1,0 +1,308 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_a59f8e327d774077a3161871157db1fb
+  created: 1779404454457
+  modified: 1779404454457
+  description: ""
+collection:
+  - url: http://localhost:4000/api/specimens/get/28c0a023-8597-4d94-bc8e-612da1b7d9cb
+    name: "get - id "
+    meta:
+      id: req_c857d215ec6d4ec6af3edb777146d2f0
+      created: 1779404454589
+      modified: 1779406895934
+      isPrivate: false
+      description: ""
+      sortKey: -1779404918058
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/update/abb66c5d-c3da-4302-bb28-6d1dd843479a
+    name: "update - id "
+    meta:
+      id: req_2b25d354b59941878583516896d74738
+      created: 1779404472750
+      modified: 1779407114245
+      isPrivate: false
+      description: ""
+      sortKey: -1779404472750
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Moblin",
+          "region": "Eldin Canyon",
+          "dangerLevel": 7,
+          "isFriendly": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/get
+    name: get
+    meta:
+      id: req_20a08547ccf64f7e802a1d65b54aae9c
+      created: 1779404474794
+      modified: 1779405373201
+      isPrivate: false
+      description: ""
+      sortKey: -1779405368913
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/create
+    name: create
+    meta:
+      id: req_2ddca67c44144b5999892c816a52ddfb
+      created: 1779404476341
+      modified: 1779406661804
+      isPrivate: false
+      description: ""
+      sortKey: -1779405368963
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Moblin",
+          "region": "Eldin Canyon",
+          "dangerLevel": 7,
+          "isFriendly": false
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/get?page=0&size=10&sortBy=dangerLevel&sortOrder=desc
+    name: get - Ordenar por peligro descendente
+    meta:
+      id: req_ff7f889e134344d9a3205e24729ea2dd
+      created: 1779405363366
+      modified: 1779406852224
+      isPrivate: false
+      description: ""
+      sortKey: -1779405363366
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/get?page=0&size=10&sortBy=name&sortOrder=desc
+    name: "get - Ordenar por nombre descendente "
+    meta:
+      id: req_8d888adf4b974180b1873f7378f269a0
+      created: 1779405364556
+      modified: 1779406807560
+      isPrivate: false
+      description: ""
+      sortKey: -1779405364556
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/get?page=1&size=2&sortBy=name&sortOrder=asc
+    name: get - Paginación página 1 tamaño 2
+    meta:
+      id: req_cdf589cbbc294faf9957708fad7b6ba4
+      created: 1779405365596
+      modified: 1779406771919
+      isPrivate: false
+      description: ""
+      sortKey: -1779405365596
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/get?page=0&size=2&sortBy=name&sortOrder=asc
+    name: get - Paginación página 0 tamaño 2
+    meta:
+      id: req_244fbe1773754a018ce5aa38627ed086
+      created: 1779405368863
+      modified: 1779406740633
+      isPrivate: false
+      description: ""
+      sortKey: -1779405368863
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/delete/abb66c5d-c3da-4302-bb28-6d1dd843479a
+    name: delete - id
+    meta:
+      id: req_3861ff034a4c4c48a7f44e531f9e541e
+      created: 1779407263129
+      modified: 1779407293357
+      isPrivate: false
+      description: ""
+      sortKey: -1779404472650
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/get/11111111-1111-1111-1111-111111111111
+    name: get - buscar id inexistente/ error 404
+    meta:
+      id: req_6de32d0caa264a97861737303f26865d
+      created: 1779407360008
+      modified: 1779407429471
+      isPrivate: false
+      description: ""
+      sortKey: -1779404472550
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/specimens/create
+    name: "validacion dto "
+    meta:
+      id: req_8f936de802db44f1822b743ea6a4c8b9
+      created: 1779407445431
+      modified: 1779407483551
+      isPrivate: false
+      description: ""
+      sortKey: -1779404472450
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "",
+          "region": "",
+          "dangerLevel": null,
+          "isFriendly": null
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_ffbc6fa9942fc5d7cfde51115bc57b879e46c159
+    created: 1779404454467
+    modified: 1779404454467
+environments:
+  name: Base Environment
+  meta:
+    id: env_ffbc6fa9942fc5d7cfde51115bc57b879e46c159
+    created: 1779404454463
+    modified: 1779404454463
+    isPrivate: false
